@@ -1,0 +1,53 @@
+.btn-group button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  float: left;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  min-width: 135px;
+  min-height: 51px;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+}
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.btn-group button {
+  letter-spacing: -0.15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+}
+.btn-group p {
+  margin: 0;
+  padding: 0;
+}
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+.btn-group button sub,
+.btn-group button small {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.btn-group button small {
+  vertical-align: middle;
+}
+.btn-group button[aria-checked="true"] {
+  background-color: #ecf1f4;
+}
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #ecf1f4;
+}

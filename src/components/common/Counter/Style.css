@@ -1,0 +1,33 @@
+.counter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 9px;
+  gap: 27px;
+  height: 44px;
+  width: 103px;
+  background: #ecf1f4;
+  border-radius: 60px;
+  justify-content: center;
+}
+.counter {
+  display: flex;
+  align-items: center;
+}
+.counter-container button:hover {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 0px 10px;
+  font-size: 20px;
+}
+.counter-container button {
+    font-size: 26px;
+  }
+.counter-label {
+  margin-left: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}

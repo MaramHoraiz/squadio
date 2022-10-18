@@ -1,38 +1,129 @@
-.App {
+body {
+  margin: 0;
+  font-family: "Poppins" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+html {
+  box-sizing: border-box;
+}
+header {
+  margin: 1rem;
+}
+button {
+  font-family: "Poppins";
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+input:focus,
+select {
+  outline: none; 
+}
+nav:target {
+  transform: translateY(0);
+}
+input,
+button,
+select {
+  border: none; 
+  background-color: transparent;
+}
+
+/* ********************** Color CSS *********************** */
+.red {
+  color: #f95659;
+}
+.green {
+  color: #38b349;
+}
+.green-bg {
+  background: #38b349;
+}
+.blue-bg{
+  background: #0F3043;
+}
+.white{
+  color: #fff;
+}
+.grey {
+  color: #999cad;
+}
+.lightGrey-bg{
+  background: #ecf1f4;
+}
+
+/* ********************** Common Component CSS *********************** */
+.btn {
+  padding: 10px 20px;
+  gap: 10px;
+  width: auto;
+  height: 51px;
+  border-radius: 10px;
+}
+.btn:hover{
+  cursor: pointer;
+  opacity: .8;
+}
+.ddl{
+  width: auto;
+  cursor: pointer;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.active {
+  font-weight: 600;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.close:hover {
+  background-image: none;
+  background-color: transparent;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hamburger,
+.close {
+  font-size: 2rem;
+  color: #00bff3;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  justify-content: center;
+}
+.marginL10{
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* **************** Responsive ******************* */
+@media (min-width: 750px) {
+  header {
+    margin: 1rem auto;
+  }
+  .hamburger,
+  .close {
+    display: none !important;
+  }
+  .headerApp ul {
+    flex-flow: nowrap;
+  }
+}
+@media (max-width: 600px) {
+.navbar{
+  display: none !important;
+}
+  .hamburger,
+  .close {
+    display: block;
+  }
+  .searchApp{display: none;}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+

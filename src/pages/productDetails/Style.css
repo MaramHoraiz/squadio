@@ -1,0 +1,17 @@
+.productPage-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem 1rem;
+}
+.details-container{
+    max-width: 630px;
+}
+.details-row{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex-wrap: wrap;
+}

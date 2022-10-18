@@ -1,0 +1,27 @@
+.selectedImage-container {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    justify-content: center;
+    min-height:600px
+}
+.gallery-container{
+    min-width: 40vw;
+}
+.mini-img {
+    width: 122px;
+    height: 105px;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  .mini-img:hover {
+    transform: scale(1.12);
+    transition: all 0.75s ease-in-out;
+  }
+  .medium-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #111111;
+  }
+  

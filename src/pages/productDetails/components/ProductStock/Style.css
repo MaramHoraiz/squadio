@@ -1,0 +1,14 @@
+.pricing-label {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+}
+.stock-label {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+    line-height: 16px;
+    color: #828282;
+  }
+  
